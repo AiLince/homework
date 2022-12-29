@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p, h1, h2, ul {
+    margin: 0;
+}

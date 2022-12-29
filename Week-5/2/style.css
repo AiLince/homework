@@ -1,0 +1,47 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+header {
+    background-color: rgb(213, 213, 213);
+    align-items: center;
+}
+h2 {
+    align-items: center;
+}
+main {
+    flex-direction: row;
+    background-color: rgb(255, 255, 199);
+    align-items: center;
+    width: 70%;
+    justify-content: space-around;
+}    
+.flexp {
+    display: inline-flex;
+    background-color: rgb(252, 252, 125);
+    width: 49%;
+    justify-content: space-between;
+}
+.flexp_s {
+    display: inline-flex;
+    background-color: rgb(252, 252, 125);
+    width: 100%;
+}
+aside {
+    background-color: rgb(206, 255, 177);
+    justify-content: flex-end;
+    width: 30%;
+}
+footer {
+    background-color: rgb(213, 213, 213);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+p {
+background-color: white;    
+align-items:center;    
+}

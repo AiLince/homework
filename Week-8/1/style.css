@@ -1,0 +1,38 @@
+.header {
+  background: rgb(48, 48, 48);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+  padding: 5px 100px;
+}
+.header__menu_item {
+  display: inline-flex;
+  margin: 4.5px;
+  width: 20%;
+  justify-content: space-between;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+link:hover {
+  color: rgb(67, 50, 255);
+}
+
+.main {
+  background: rgb(223, 223, 223);
+  margin: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 50px;
+}
+
+.footer {
+  background: rgb(48, 48, 48);
+  color: white;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

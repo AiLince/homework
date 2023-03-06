@@ -1,0 +1,53 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    margin: 30px;
+}
+
+h2 {
+    color: rgb(148, 52, 239);
+}
+
+.comment-service {
+    display: flex;
+    flex-direction: row;
+}
+
+input, textarea {
+    border-color: rgb(148, 52, 239);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 50%;
+}
+
+textarea {
+    height: 70px;
+}
+
+button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    background-color: rgb(148, 52, 239);
+    border-radius: 2px;
+    border-color: white;
+    color: white;
+    margin: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(160, 97, 219);
+    font-size: larger;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Калькулятор стоимости автомобиля</title>
+</head>
+<body>
+    <h1>Калькулятор расчёта стоимости автомобиля</h1>
+    <form onsubmit="return false">
+        <div class="options">
+            <p>Марка автомобиля</p>
+            <select id="brand">
+                <option>Renault</option>
+                <option>Opel</option>
+                <option>Mazda</option>
+                <option>Jaguar</option>
+            </select>
+            <p>Модель</p>
+            <select id="model"></select>
+            <p>Топливо</p>
+            <input type="radio" name="fuel" id="fuel1">
+            <label for="fuel1">Бензин</label>
+            <input type="radio" name="fuel" id="fuel2">
+            <label for="fuel2">Дизель</label>
+            <input type="radio" name="fuel" id="fuel3">
+            <label for="fuel3">Газ</label>
+            <input type="radio" name="fuel" id="fuel4">
+            <label for="fuel4">Электричество</label>
+            <p>Объём двигателя</p>
+            <input type="number" id="volume" min="1.1" max="3.5" step="0.1">
+            <p>Состояние автомобиля</p>
+            <input type="radio" name="condition" id="condition1">
+            <label for="condition1">Новый</label>
+            <input type="radio" name="condition" id="condition2">
+            <label for="condition2">Подержанный</label>
+            <p>Способ оплаты</p>
+            <input type="radio" name="pay" id="pay1">
+            <label for="pay1">Картой</label>
+            <input type="radio" name="pay" id="pay2">
+            <label for="pay2">Наличными</label>
+            <input type="radio" name="pay" id="pay3">
+            <label for="pay3">Счёт на юридическое лицо</label>
+        </div>
+    <button type="submit" id="calculator">Рассчитать</button>
+    <span id="result"></span>
+    <script src="index.js"></script>
+    </form>
+</body>
+</html>

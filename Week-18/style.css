@@ -1,0 +1,122 @@
+body {
+    font-family: 'Comic Neue', cursive;
+    background-image: url("image/d031595424c04205ba9a5a3dc289b996.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #5cc3bf;
+    text-shadow: 5px 5px 0px #2a6f6d;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: large;
+}
+
+#superheroes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-shadow: 1px 1px 5px #ffffff;
+}
+
+.card {
+    perspective: 600px;
+    height: 520px;
+    width: 350px;
+    margin: 20px;
+    font-size: small;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/**Переворот карточки**/
+
+.card__front{
+    z-index: 1;
+    background-image: url("image/865289_retro-wallpapers-minimal-clean-miscellaneous-style-1920x1080_1920x1080_h.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    backface-visibility: hidden;
+    transition: transform .9s cubic-bezier(.2,.85,.4,1.275);
+    }
+    .card__back{
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    height: 520px;
+    width: 350px;
+    text-align: center;
+    backface-visibility: hidden;
+    background-image: url("image/865289_retro-wallpapers-minimal-clean-miscellaneous-style-1920x1080_1920x1080_h.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transform: rotateY(-180deg);
+    transition: transform .9s cubic-bezier(.2,.85,.4,1.275);
+    }
+    .card:hover .card__back {
+    transform: rotateY(0deg);
+    z-index: 2;
+    }
+    .card:hover .card__front {
+    transform: rotateY(180deg);
+    z-index: -1;
+    }
+
+
+/**Рейтинг**/
+
+.rating-area {
+	overflow: hidden;
+	width: 250px;
+    margin: 25px;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 42px;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: rgb(220, 255, 44);
+	text-shadow: 1px 1px rgb(138, 159, 30);
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: rgb(220, 255, 44);
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: rgb(220, 255, 44);
+	text-shadow: 1px 1px rgb(138, 159, 30);
+}
+.rating-area > label:active {
+	position: relative;
+}

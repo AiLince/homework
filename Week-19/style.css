@@ -1,0 +1,22 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#post-container {
+    width: 97%;
+    height: 400px;
+    background: #fff;
+    border: 1px solid #C1C1C1;
+    overflow: auto;
+    padding: 10px;
+    
+}
+
+#post-form {
+    text-align: center;
+    margin: 30px;
+}
+
+#new-post {
+    text-align: start;
+}
